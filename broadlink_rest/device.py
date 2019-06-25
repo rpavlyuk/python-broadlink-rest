@@ -16,7 +16,6 @@ def to_dict(device):
             mac_raw = ''.join(format(x, '02x') for x in bytearray(device.mac)),
             timeout = device.timeout,
             count = device.count,
-            key = ''.join(format(x, '02x') for x in bytearray(device.key)),
             iv = ''.join(format(x, '02x') for x in bytearray(device.iv)),
             id = ''.join(format(x, '02x') for x in bytearray(device.id))
             )
